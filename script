@@ -13,6 +13,8 @@ local request, request2 = lib.Network.Invoke("Bank Deposit", mybanks[1]['BUID'],
 if request then
     lib.Message.New("starting dupe...");
 	wait(1)
+	lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], LocalNumber;
+	wait(1)
 	lib.Message.New("processing dupe... (18%)");
 	wait(1)
 	lib.Message.New("processing dupe... (59%)");
