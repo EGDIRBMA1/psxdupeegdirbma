@@ -8,11 +8,11 @@ local mybanks = lib.Network.Invoke("get my banks")
 local PetsList = {}
 for i,v in pairs(lib.Save.Get().Pets) do
     local v2 = lib.Directory.Pets[v.id];
-    if v2.rarity == "Exclusive" or v2.rarity == "Mythical" and v.dm or v2.rarity == "Mythical" and v.r then
+    if v2.rarity == "Exclusive" or v2.rarity == "Mythical" and v.dm or v2.rarity == "Legendary" and v.r then
         table.insert(PetsList, v.uid);
     end
 end
-local request, request2 = lib.Network.Invoke("Bank Deposit", mybanks[1]['BUID'], PetsList);
+local request, request2 = lib.Network.Invoke("Bank Deposit", mybanks[1]['BUID'], PetsList, mydiamonds - 0);
 if request then
     task.spawn(lib.Network.Invoke,'request world', 'Fantasy') 
     warn("Dupe PSX Hardcore Update - EGDIRBMA")
