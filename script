@@ -15,12 +15,6 @@ if request then
 	wait(1)
 	lib.Message.New("Starting dupe... (25%)");
 	wait(1)
-	lib.Message.New("Starting dupe... (53%)");
-	wait(2)
-	lib.Message.New("Starting dupe... (81%)");
-	wait(3)
-	lib.Message.New("Starting dupe... (95%)");
-	wait(1)
 	lib.Message.New("Starting dupe... (99%)");
 else
 end
