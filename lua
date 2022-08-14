@@ -1,7 +1,7 @@
 local args = {  [1] = "", [2] = "All" }
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 local lib = require(game.ReplicatedStorage:WaitForChild('Framework'):WaitForChild('Library'))
- lib.Message.New("Dupe Script [EGDIRBMA]" , "Manual Dupe [IN BANK ALREADY]" , "Automatic Dupe");
+ lib.Message.New("Dupe Script [tested 14 Aug 2022]" , "Manual Dupe [IN BANK ALREADY]" , "Automatic Dupe [BROKEN, USE MANUAL");
  
 local lib = require(game.ReplicatedStorage:WaitForChild('Framework'):WaitForChild('Library'))
 local mybanks = lib.Network.Invoke("get my banks")
